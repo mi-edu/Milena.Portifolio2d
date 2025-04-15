@@ -1,0 +1,163 @@
+/* Reset padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  :root {
+    --dark-bg: #191414;
+    --light-bg: #d88ed6;
+    --accent: #000000;
+    --accent-glow: #572cac;
+    --text-color: #3037c0;
+  }
+  
+  body {
+    background-color: var(--accent-glow);
+    color: var(--accent);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  /* Navegação */
+  .navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--text-color);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid var(--accent);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  
+  /* Links da navegação */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-links a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-glow);
+    transition: 0.3s ease;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 5%;
+    flex-wrap: wrap;
+  }
+  
+  .hero-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .profile-img {
+    max-width: 300px;
+    border-radius: 50%;
+    border: 4px solid var(--accent);
+  }
+  
+  /* Seção de Skills */
+  .skills {
+    padding: 4rem 5%;
+    background-color: var(--light-bg);
+    color: var(--dark-bg);
+    text-align: center;
+  }
+  
+  .skills h2 {
+    margin-bottom: 2rem;
+  }
+  
+  .skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .skills-card {
+    background: #fff;
+    border: 1px solid var(--accent);
+    padding: 2rem;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skills-card i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+  }
+
+  /*footer*/
+  footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #2659db;
+    color: white;
+}
+.project {
+  display: flex;
+  gap: 30px;
+  padding: 2rem 5%;
+}
+
+.project div {
+  flex: 1;
+  background-color: rgb(169, 67, 137);
+  padding: 1rem;
+  border-radius: 10px;
+  color: black;
+}
+
+.project h2 {
+  margin-bottom: 1rem;
+}
+
+.project ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project ul li {
+  margin-bottom: 0.5rem;
+}
